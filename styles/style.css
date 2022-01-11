@@ -1,8 +1,28 @@
 /* Font Awsome Poppins */
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap");
+/* To Stop scroll bar
+
+html
+{
+   overflow:hidden;
+   height:100%;
+}
+body
+{
+   position:relative;
+   overflow-y:scroll;
+   height:100%;
+   -webkit-overflow-scrolling:touch; /* So iOS Safari gets the inertia & rubber-band effect */
 
 /* Common styles or utilities */
+html {
+  overflow: hidden;
+  height: 100%;
+}
 body {
+  position: relative;
+  overflow-y: scroll;
+  height: 100%;
   font-family: "Poppins", sans-serif;
   background-color: #e5e5e5;
 }
@@ -17,6 +37,7 @@ main {
   padding: 30px;
   margin-top: 21px;
   border-radius: 5px;
+  overflow-x: hidden;
 }
 hr {
   border: 1px solid #d1d1d1;
@@ -109,11 +130,11 @@ hr {
 @media only screen and (max-width: 688px) {
   .container {
     width: 100%;
+    overflow-x: hidden;
   }
   .players,
   .blogs,
   .courses {
-    background-color: red;
     grid-template-columns: repeat(1, 1fr);
   }
   .player {
@@ -127,6 +148,7 @@ hr {
 @media only screen and (min-width: 688px) and (max-width: 992px) {
   .container {
     width: 100%;
+    overflow-x: hidden;
   }
   .players,
   .blogs {
